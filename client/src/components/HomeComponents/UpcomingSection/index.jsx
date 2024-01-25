@@ -36,7 +36,7 @@ const UpcomingSection = () => {
                     </div>
 
                     <div>
-                        <img className=' w-full lg:w-[300px] ' src="https://preview.colorlib.com/theme/course/images/event_1.jpg" alt="" />
+                        <img className=' w-full lg:w-[300px] ' src="https://preview.colorlib.com/theme/course/images/event_2.jpg" alt="" />
                     </div>
                 </div>
                 <div className=' flex gap-12 l:justify-between flex-col lg:flex-row justify-center'>
@@ -52,7 +52,7 @@ const UpcomingSection = () => {
                     </div>
 
                     <div>
-                        <img className=' w-full lg:w-[300px] ' src="https://preview.colorlib.com/theme/course/images/event_1.jpg" alt="" />
+                        <img className=' w-full lg:w-[300px] ' src="https://preview.colorlib.com/theme/course/images/event_3.jpg" alt="" />
                     </div>
                 </div>
               
