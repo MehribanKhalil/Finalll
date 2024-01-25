@@ -5,7 +5,12 @@
         color: white;
         padding-bottom: 30px;
     }
-
+    li{
+        &:hover{
+            color: var(--main-color);
+            cursor: pointer;
+        }
+    }
     img{
         width: 30px;
     }

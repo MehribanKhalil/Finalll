@@ -9,6 +9,7 @@ import MobileNavbar from '../../components/NavbarComponents/MobileNavbar';
 import { WihslistContext } from '../../context/WishlistContex';
 import { BasketContext } from '../../context/BasketContex';
 
+import './index.scss'
 
 const Navbar = () => {
     const {wishlist}=useContext(WihslistContext)
@@ -16,10 +17,10 @@ const Navbar = () => {
 
     const [isOpen, setOpen] = useState(false)
   return (
-    <nav className=' fixed z-30 w-full top-10'>
+    <nav className='navbar fixed z-30 w-full top-10'>
         <div className=' flex  justify-between  py-6 lg:py-0 items-center max-w-[1000px] mx-auto bg-white shadow-xl'>
             <div className=' px-8' >
-                <NavLink className='flex items-center'><img src="https://preview.colorlib.com/theme/course/images/logo.png" alt="" /> <span className='text-xl md:text-3xl font-bold'>COURSE</span></NavLink>
+                <NavLink to={'/'} className='flex items-center'><img src="https://preview.colorlib.com/theme/course/images/logo.png" alt="" /> <span className='text-xl md:text-3xl font-bold'>COURSE</span></NavLink>
             </div>
             <div className=' hidden lg:flex items-center gap-4 text-sm font-semibold'>
                 <NavLink className='nav-item' to={'/'}>HOME</NavLink>

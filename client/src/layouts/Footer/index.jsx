@@ -67,11 +67,11 @@ const Footer = () => {
                 <p className='  inline-flex flex-col md:flex-row  text-center md:text-start  items-center gap-1 '>Copyright ©2024 All rights reserved | This template is made with  <span><GoHeart /></span> by <span className=' text-blue-500  cursor-pointer'> Colorlib</span></p>
 
                 <div className=' flex  gap-5 text-white'>
-                    <button><FaPinterestP /></button>
-                    <button><FaLinkedinIn /></button>
-                    <button><FaInstagram /></button>
-                    <button><FaFacebookF /></button>
-                    <button><FaTwitter /></button>
+                    <button className=' hover:text-main-color  duration-200'><FaPinterestP /></button>
+                    <button className=' hover:text-main-color  duration-200'><FaLinkedinIn /></button>
+                    <button className=' hover:text-main-color  duration-200'><FaInstagram /></button>
+                    <button className=' hover:text-main-color  duration-200'><FaFacebookF /></button>
+                    <button className=' hover:text-main-color  duration-200'><FaTwitter /></button>
                 </div>  
             </div>
     </footer>

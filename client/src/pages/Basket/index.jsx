@@ -3,9 +3,12 @@ import { Helmet } from 'react-helmet-async'
 import SectionHeading from '../../components/Common/SectionHeading'
 import { BasketContext } from '../../context/BasketContex'
 import BasketCard from './BasketCard'
+import { useNavigate } from 'react-router-dom'
 
 const Basket = () => {
   const {basket}=useContext(BasketContext)
+
+  const nav=useNavigate()
 
   const subtotal=basket.reduce((basketTotal,BasketItem)=>basketTotal+(BasketItem.count*BasketItem.price),0)
 
@@ -19,13 +22,13 @@ const Basket = () => {
 
       {
         basket.length===0 ? "" : 
-        <p className=' text-xl font-semibold'>Subtotal : ${subtotal}</p>
+        <p className=' text-xl font-semibold'>Subtotal : ${subtotal}</p> 
       }
 
       <div className=" grid  grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12  pt-10">
 
         {
-          basket.length===0 ? <p className=' text-xl font-semibold'>Your Basket is empth :/</p> :
+          basket.length===0 ? <p className=' text-xl font-semibold'>Your Basket is empth :/  <button onClick={()=>nav('/')}> Continue to Shopping  </button> </p> :
           basket && basket.map(course => (
             <div key={course._id}>
               <BasketCard {...course} product={course} />

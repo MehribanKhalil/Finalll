@@ -22,6 +22,7 @@ const FormComponent = ({ createData }) => {
 				}}
 			>
 				<Form className=" flex flex-col gap-4  justify-center  text-center p-10 rounded-xl bg-gray-200 max-w-[700px] mx-auto">
+					<h2 className=" text-2xl  font-semibold">Create New Course</h2>
 					<div className=" flex flex-col gap-2  ">
 						<Field name="image" type="text" className=' border border-main-color outline-none  px-6 py-2 rounded-xl' placeholder='Image' />
 						<ErrorMessage name="image" />
